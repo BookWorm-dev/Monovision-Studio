@@ -1,10 +1,5 @@
-:root {
-    --light-color: #F5F5F7;
-    --dark-color: #221F20;
-    --container-padding-inline: 25rem;
-    --footer-padding-inline: 10%;
-    --section-padding-top: 8rem;
-}
+@use "./helpers/reset";
+@use "./abstracts" as *;
 
 html {
     font-family: "Inter", sans-serif;
@@ -12,18 +7,18 @@ html {
 }
 
 .section {
-    background-color: var(--light-color);
-    padding-top: var(--section-padding-top);
+    background-color: $light-color;
+    padding-top: $section-padding-top;
 }
 
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 var(--container-padding-inline);
+    padding: 0 $container-padding-inline;
 }
 
 footer .container {
-    padding: 0 var(--footer-padding-inline);
+    padding: 0 $footer-padding-inline;
 }
 
 .section.section--promo {
@@ -31,6 +26,7 @@ footer .container {
     min-height: 100vh;
     padding-top: 7.5rem;
     background: url('../imgs/Bg.jpg') center center/ cover, no-repeat;
+
 }
 
 .promo__title {
@@ -39,7 +35,7 @@ footer .container {
     font-weight: 400;
     line-height: 7.2rem;
     text-transform: uppercase;
-    color: var(--light-color);
+    color: $light-color;
 }
 
 .promo__descr {
@@ -47,7 +43,7 @@ footer .container {
     font-size: 3.2rem;
     font-weight: 100;
     line-height: 3.9rem;
-    color: var(--light-color);
+    color: $light-color;
 }
 
 .btn {
@@ -61,19 +57,20 @@ footer .container {
     line-height: 1.9rem;
     text-align: center;
     color: #D9D9D9;
-    border: 1px solid var(--light-color);
+    border: 1px solid $light-color;
     cursor: pointer;
     text-decoration: none;
     transition: all 0.3s ease-out;
 
+    :hover {
+
+        font-weight: 500;
+        box-shadow: 0.5rem 0.5rem 1rem 0rem #FFFFFF9E;
+
+    }
+
 }
 
-.btn:hover {
-
-    font-weight: 500;
-    box-shadow: 0.5rem 0.5rem 1rem 0rem #FFFFFF9E;
-
-}
 
 .promo__addres,
 .promo__phone {
@@ -81,7 +78,7 @@ footer .container {
     font-size: 1.6rem;
     font-weight: 100;
     line-height: 1.9rem;
-    color: var(--light-color);
+    color: $light-color;
     text-decoration: none;
 }
 
@@ -113,7 +110,7 @@ footer .container {
 }
 
 .keywords__item {
-    color: var(--light-color);
+    color: $light-color;
     font-size: 1rem;
     font-weight: 100;
     line-height: 1.2rem;
@@ -128,7 +125,7 @@ footer .container {
     font-style: italic;
     font-weight: 400;
     line-height: 1.5rem;
-    color: var(--dark-color);
+    color: $dark-color;
 }
 
 .info__text {
@@ -137,11 +134,11 @@ footer .container {
     font-size: 4rem;
     font-weight: 400;
     line-height: 4.8rem;
-    color: var(--dark-color);
+    color: $dark-color;
 }
 
 .info__text_span {
-    color: #a5a5a5;
+    color: #A5A5A5;
 }
 
 .services {
@@ -186,7 +183,7 @@ footer .container {
     font-weight: 400;
     line-height: 1.9rem;
     margin-bottom: 1rem;
-    color: var(--dark-color);
+    color: $dark-color;
 }
 
 .services__text {
@@ -195,7 +192,7 @@ footer .container {
     font-weight: 400;
     line-height: 2.4rem;
     letter-spacing: 0.02em;
-    color: var(--dark-color);
+    color: $dark-color;
 }
 
 /* Section 3 */
@@ -207,7 +204,7 @@ footer .container {
     font-size: 4rem;
     font-weight: 400;
     line-height: 4.8rem;
-    color: var(--dark-color);
+    color: $dark-color;
 
     .decor_title {
         position: relative;
@@ -227,7 +224,7 @@ footer .container {
         bottom: 0;
         right: 0;
         border: 2px;
-        background-color: var(--dark-color);
+        background-color: $dark-color;
     }
 
     .decor_title_2::before {
@@ -240,7 +237,7 @@ footer .container {
         bottom: 0;
         right: 0;
         border: 2px;
-        background-color: var(--dark-color);
+        background-color: $dark-color;
     }
 }
 
@@ -306,7 +303,7 @@ footer .container {
 
 .logo_wrapper {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 3rem;
 }
 
@@ -327,7 +324,7 @@ footer .container {
 }
 
 .footer {
-    background-color: var(--dark-color);
+    background-color: $dark-color;
 }
 
 .footer_info {
@@ -335,6 +332,7 @@ footer .container {
     padding-bottom: 8.8rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .social_media {
@@ -356,13 +354,14 @@ footer .container {
 .footer_addres address {
     font-size: 2rem;
     font-weight: 400;
+    font-style: normal;
     line-height: 2.4rem;
-    color: var(--light-color);
+    color: $light-color;
 }
 
 .footer_info .promo__phone {
     font-size: 2rem;
     font-weight: 400;
     line-height: 2.4rem;
-    color: var(--light-color);
+    color: $light-color;
 }

@@ -210,33 +210,14 @@ footer .container {
         position: relative;
     }
 
-    .decor_title_2 {
-        position: relative;
-    }
-
-    .decor_title::before {
-        position: absolute;
+    .decor_title::after {
+        content: "";
         display: block;
-        content: '';
-        width: 75px;
-        height: 1px;
-        left: 10.2rem;
-        bottom: 0;
+        position: absolute;
+        bottom: -1px;
         right: 0;
-        border: 2px;
-        background-color: $dark-color;
-    }
-
-    .decor_title_2::before {
-        position: absolute;
-        display: block;
-        content: '';
         width: 7.5rem;
-        height: 1px;
-        left: 18rem;
-        bottom: 0;
-        right: 0;
-        border: 2px;
+        height: 2px;
         background-color: $dark-color;
     }
 }

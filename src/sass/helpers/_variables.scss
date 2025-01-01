@@ -4,21 +4,26 @@ $light-color: #F5F5F7;
 $dark-color: #221F20;
 
 /* Measurement  */
-$container-padding-inline: 25rem;
+$container-padding-inline: 13%;
+$container-padding-inline-tablet: 6%;
 $footer-padding-inline: 10%;
-$section-padding-top: 8rem;
+$footer-padding-inline-tablet: 6%;
+$container-padding-inline-mobile: 1.5rem;
+$section-padding-bottom: 8rem;
 
 
 // breakpoints
-$point_1: 1200px;
-$point_2: 1024px;
+$point_1: 1440px;
+$point_2: 1200px;
+$point_3: 1024px;
 /* ! */
-$point_3: 1023.98px;
-$point_4: 768px;
+$point_4: 1023.98px;
+$point_5: 768px;
 /* ! */
-$point_5: 767.98px;
-$point_6: 480px;
-$point_7: 375px;
+$point_6: 750px;
+$point_7: 576px;
+$point_8: 480px;
+$point_9: 375px;
 /* ! */
-$point_8: 374.98px;
+$point_10: 374.98px;
 /* ! */

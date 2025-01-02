@@ -546,6 +546,8 @@ footer .container {
     @include bp($point_5) {
         width: 15.4rem;
         height: 11.6rem;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 

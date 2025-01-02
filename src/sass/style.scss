@@ -577,6 +577,8 @@ footer .container {
 
     @include bp($point_7) {
         align-items: center;
+        padding-bottom: 4rem;
+
     }
 
 
@@ -634,7 +636,6 @@ footer .container {
 
     @include bp($point_7) {
         order: -1;
-        padding-bottom: 3rem;
     }
 
 }

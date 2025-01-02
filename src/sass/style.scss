@@ -634,6 +634,7 @@ footer .container {
 
     @include bp($point_7) {
         order: -1;
+        padding-bottom: 4rem;
     }
 
 }
